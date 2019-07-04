@@ -1,22 +1,10 @@
-import React, { Fragment } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import React from 'react';
+import Routes from './routes';
 
 const App = () => {
   return (
-    <Fragment>
-      <View style={styles.container}>
-        <Text>Teste M!</Text>
-      </View>
-    </Fragment>
+    <Routes />
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-});
 
 export default App;
