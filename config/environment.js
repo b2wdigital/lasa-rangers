@@ -1,32 +1,32 @@
 //environment.js
 var environments = {
-    staging: {
-      FIREBASE_API_KEY: 'XXXX',
-      FIREBASE_AUTH_DOMAIN: 'XXXX',
-      FIREBASE_DATABASE_URL: 'XXXX',
-      FIREBASE_PROJECT_ID: 'XXXX',
-      FIREBASE_STORAGE_BUCKET: 'XXXX',
-      FIREBASE_MESSAGING_SENDER_ID: 'XXXX',
-      GOOGLE_CLOUD_VISION_API_KEY: 'XXXX'
-    },
-    production: {
-      // Warning: This file still gets included in your native binary and is not a secure way to store secrets if you build for the app stores. Details: https://github.com/expo/expo/issues/83
-    }
-  };
-  
-  function getReleaseChannel() {
-    let releaseChannel = Expo.Constants.manifest.releaseChannel;
-    if (releaseChannel === undefined) {
-      return 'staging';
-    } else if (releaseChannel === 'staging') {
-      return 'staging';
-    } else {
-      return 'staging';
-    }
+  staging: {
+    FIREBASE_API_KEY: "AIzaSyAwbrZ9VIpijrJMKbQpe7mXZRFIMAbzt84",
+    FIREBASE_AUTH_DOMAIN: "fotos-6b165.firebaseapp.com",
+    FIREBASE_DATABASE_URL: "https://fotos-6b165.firebaseio.com",
+    FIREBASE_PROJECT_ID: "fotos-6b165",
+    FIREBASE_STORAGE_BUCKET: "fotos-6b165.appspot.com",
+    FIREBASE_MESSAGING_SENDER_ID: "853290314912",
+    GOOGLE_CLOUD_VISION_API_KEY: "AIzaSyB6gPz4b757nHoMkPtcktXrgVllT0SG23Y"
+  },
+  production: {
+    // Warning: This file still gets included in your native binary and is not a secure way to store secrets if you build for the app stores. Details: https://github.com/expo/expo/issues/83
   }
-  function getEnvironment(env) {
-    console.log('Release Channel: ', getReleaseChannel());
-    return environments[env];
+};
+
+function getReleaseChannel() {
+  let releaseChannel = Expo.Constants.manifest.releaseChannel;
+  if (releaseChannel === undefined) {
+    return "staging";
+  } else if (releaseChannel === "staging") {
+    return "staging";
+  } else {
+    return "staging";
   }
-  var Environment = getEnvironment(getReleaseChannel());
-  export default Environment;
+}
+function getEnvironment(env) {
+  console.log("Release Channel: ", getReleaseChannel());
+  return environments[env];
+}
+var Environment = getEnvironment(getReleaseChannel());
+export default Environment;
