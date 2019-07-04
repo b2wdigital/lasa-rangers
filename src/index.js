@@ -5,7 +5,7 @@ const App = () => {
   return (
     <Fragment>
       <View style={styles.container}>
-        <Text>Teste</Text>
+        <Text>Teste M!</Text>
       </View>
     </Fragment>
   );
