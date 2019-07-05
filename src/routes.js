@@ -8,9 +8,14 @@ import Login from "./pages/Login";
 import Main from "./pages/Main";
 import Home from "./pages/Home";
 import ProductDetails from "./pages/ProductDetails";
+import Maps from "./pages/Maps";
 
 const MainRoute = createStackNavigator({
   Main,
+})
+
+const MapsRoutes = createStackNavigator({
+  Maps
 })
 
 const ProductDetailsTab = createStackNavigator({
@@ -19,6 +24,7 @@ const ProductDetailsTab = createStackNavigator({
 
 const Routes = createAppContainer(
   createSwitchNavigator({
+    MapsRoutes,
     ProductDetailsTab,
     MainRoute,
     Home,
