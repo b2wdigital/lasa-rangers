@@ -9,5 +9,10 @@ export const Container = styled.View`
 
 export const ButtonSearch = styled.View`
   height: 52;
-  width: 100%;
+  width: 60;
+  background-color: orange;
+  position: absolute;
+  top: 10;
+  right: 50;
+  z-index: 1;
 `;
