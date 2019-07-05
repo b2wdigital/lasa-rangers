@@ -90,7 +90,7 @@ export class Home extends Component {
                       limiteTotal: 2000,
                       loading: true,
                     }),
-                    navigation.navigate('Main', {content});
+                    navigation.navigate('Main');
                     () => {
 
                       // Alert.alert('Ja vamos te redirecionar , so mais um pouquinho ...');

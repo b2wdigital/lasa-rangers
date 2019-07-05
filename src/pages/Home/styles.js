@@ -10,7 +10,7 @@ export const Container = styled.View`
 export const ButtonSearch = styled.TouchableOpacity`
   height: 75;
   width: 60;
-  background-color: orange;
+  /* background-color: orange; */
   position: absolute;
   top: 10;
   right: 50;

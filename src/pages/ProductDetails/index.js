@@ -47,6 +47,7 @@ export class ProductDetails extends Component {
 
 
     render() {
+      const {navigation} = this.props;
         return (
             <Container>
               <ContainerPhotos>
@@ -97,7 +98,7 @@ export class ProductDetails extends Component {
                 </TextButton>
               </Buy>
 
-              <Buy>
+              <Buy onPress={() => navigation.navigate('Maps')}>
                 <TextButton>
                   RETIRE NA LOJA
                 </TextButton>

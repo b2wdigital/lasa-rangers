@@ -22,13 +22,20 @@ const ProductDetailsTab = createStackNavigator({
   ProductDetails
 })
 
+const Tabs = createStackNavigator({
+  Main,
+  ProductDetails,
+  Maps,
+})
+
 const Routes = createAppContainer(
   createSwitchNavigator({
-    MapsRoutes,
-    ProductDetailsTab,
-    MainRoute,
+    // MapsRoutes,
+    // ProductDetailsTab,
+    // MainRoute,
+    // Home,
     Home,
-    Login,
+    Tabs,
   })
 );
 

@@ -46,6 +46,7 @@ export class Main extends Component {
     data: []
   }
     render() {
+      const { navigation } = this.props;
         return (
             <Container>
               <FirstLine>
@@ -65,7 +66,7 @@ export class Main extends Component {
                 </Text>
               </SecondLine>
               <ScrollView>
-                  <LineItem>
+                  <LineItem onPress={() => navigation.navigate('ProductDetails')}>
                     <LeftArea>
                       <Image source={foto_2} resizeMode="contain" style={{height: '100%', width: '100%'}}/>
                     </LeftArea>

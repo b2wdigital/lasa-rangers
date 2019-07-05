@@ -1,29 +1,43 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import MapView from 'react-native-maps';
-
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { WebView } from 'react-native-webview';
+import Icon from 'react-native-vector-icons/FontAwesome';
 export class Maps extends Component {
+  static navigationOptions = {
+    title: 'LOJAS PROXIMAS',
+    headerTintColor: "#ffffff",
+    headerBackTitle: null,
+    headerRight: (
+      <View style={{ flexDirection: 'row' }}>
+        <TouchableOpacity>
+          <Icon
+            name="search"
+            size={22}
+            style={{ paddingRight: 16, color: '#FFF' }}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Icon
+            name="shopping-basket"
+            size={22}
+            style={{ paddingRight: 16, color: '#FFF' }}
+          />
+        </TouchableOpacity>
+      </View>
+    ),
+    headerLeft: (
+      <Icon name="arrow-left" size={22} style={{ paddingLeft: 16, color: '#FFF' }} />
+    ),
+    headerStyle: {
+      backgroundColor: 'red'
+    },
+  };
+
   render() {
     return (
-      <View style={StyleSheet.container}>
-          <MapView
-    initialRegion={{
-      latitude: 37.78825,
-      longitude: -122.4324,
-      latitudeDelta: 0.0922,
-      longitudeDelta: 0.0421,
-    }}
-  />
-      </View>
-    )
+      <WebView  source={{ uri: 'https://pt.batchgeo.com/map/b0065b7ae0de4804e99bf15ede55e314'}} />
+    );
   }
 }
-
-const style = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: '100%'
-  }
-})
 
 export default Maps;
