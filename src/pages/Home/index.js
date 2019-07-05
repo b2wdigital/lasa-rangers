@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, Image, Dimensions } from 'react-native';
+import screen_1 from '../../assets/images/Screen_1.png';
+import {Container} from './styles';
 
 export class Home extends Component {
     render() {
         return (
-            <View>
-                <Text> Home </Text>
-            </View>
+            <Container>
+                <Image source={screen_1}  style={{ height: Dimensions.get('window').height,  width: Dimensions.get('window').width}}/>
+            </Container>
         )
     }
 }

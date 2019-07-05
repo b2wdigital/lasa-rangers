@@ -1,4 +1,4 @@
-package com.b2whackathon;
+package com.koob;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "b2whackathon";
+        return "koob";
     }
 }
