@@ -5,6 +5,8 @@ import icon from "../../assets/images/americanas.png";
 import icon_logo from '../../assets/images/americanas_logo.png';
 
 export class Login extends Component {
+
+  
   render() {
     const {navigation} = this.props;
     return (
