@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableOpacity, ScrollView, Image } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome'
-import {Container , ContainerPhotos} from './styles';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { Container , ContainerPhoto, ContainerPhotos, FirstLine, SecondLine, ThirdLine, Price, Buy, TitleLine, TextButton } from './styles';
 import foto_10 from '../../assets/images/10.png';
 import foto_11 from '../../assets/images/11.png';
 import foto_12 from '../../assets/images/12.png';
@@ -41,7 +41,7 @@ export class ProductDetails extends Component {
       <Icon name="arrow-left" size={22} style={{ paddingLeft: 16, color: '#FFF' }} />
     ),
     headerStyle: {
-      backgroundColor: 'red'
+      backgroundColor: 'red',
     },
   };
 
@@ -51,11 +51,57 @@ export class ProductDetails extends Component {
             <Container>
               <ContainerPhotos>
                 <ScrollView horizontal pagingEnabled>
-                  <Image source={foto_10} resizeMode="contain" style={{height: '100%', width: '100%'}}/>
-                  <Image source={foto_11} resizeMode="contain" style={{height: '100%', width: '100%'}}/>
-                  <Image source={foto_12} resizeMode="contain" style={{height: '100%', width: '100%'}}/>
+                <ContainerPhoto>
+                  <Image source={foto_10} resizeMode="contain" style={{height: '100%', width: '100%' }}/>
+                </ContainerPhoto>
+
+                <ContainerPhoto>
+                  <Image source={foto_11} resizeMode="contain" style={{height: '100%', width: '100%' }} />
+                </ContainerPhoto>
+
+                <ContainerPhoto>
+                  <Image source={foto_12} resizeMode="contain" style={{height: '100%', width: '100%' }} />
+                </ContainerPhoto>
+
                 </ScrollView>
               </ContainerPhotos>
+
+              <FirstLine>
+                <TitleLine>
+                Jaqueta Jeans Feminina Oversized
+                </TitleLine>
+
+              </FirstLine>
+              <SecondLine>
+                <Text>Tamanho ( 6 opcoes )</Text>
+              </SecondLine>
+              <ThirdLine>
+              <Text>Selecione uma cor</Text>
+              </ThirdLine>
+
+              <Price>
+
+                RS 249,00
+
+              </Price>
+
+              <Buy>
+                <TextButton>
+                  COMPRAR
+                </TextButton>
+              </Buy>
+
+              <Buy>
+                <TextButton>
+                  PAGUE COM O AME
+                </TextButton>
+              </Buy>
+
+              <Buy>
+                <TextButton>
+                  RETIRE NA LOJA
+                </TextButton>
+              </Buy>
             </Container>
         )
     }
