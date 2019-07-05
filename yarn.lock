@@ -3111,7 +3111,7 @@ eslint-plugin-react-native@^3.6.0:
   dependencies:
     eslint-plugin-react-native-globals "^0.1.1"
 
-eslint-plugin-react@^7.13.0:
+eslint-plugin-react@^7.14.2:
   version "7.14.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.14.2.tgz#94c193cc77a899ac0ecbb2766fbef88685b7ecc1"
   integrity sha512-jZdnKe3ip7FQOdjxks9XPN0pjUKZYq48OggNMd16Sk+8VXx6JOvXmlElxROCgp7tiUsTsze3jd78s/9AFJP2mA==
@@ -7044,6 +7044,13 @@ react-native-calendars@^1.151.0:
     prop-types "^15.5.10"
     xdate "^0.8.0"
 
+react-native-camera@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/react-native-camera/-/react-native-camera-2.11.0.tgz#480de13f0ac192e950c406d8ca0157cf4bb5f41a"
+  integrity sha512-ay8te4nvL5mGzRjb2QMTOyJX+JfaIW/9oFjFVIkXOB9DzFipfeVTPMdwNx9GMpdmQ0muSXkuF16pa7K/1QLHlQ==
+  dependencies:
+    prop-types "^15.6.2"
+
 react-native-credit-card-input@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/react-native-credit-card-input/-/react-native-credit-card-input-0.4.1.tgz#e62dd1a9beeab6787e5373ba23b93831cbf5f3de"
@@ -7114,7 +7121,7 @@ react-native-image-filter-kit@^0.3.8:
     rgba-to-rgb "^1.0.2"
     rn-color-matrices "^4.1.0"
 
-react-native-image-picker@^0.28.0:
+react-native-image-picker@^0.28.1:
   version "0.28.1"
   resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-0.28.1.tgz#1127460522e0c9741fc62f3d040271d298fb6a6e"
   integrity sha512-CW2dm+cjsdW2fjBW2WD/cSufNG0x0UpljwGHrjSzyB0TckoW+tjYv44UWtckCWxr1JtCg+QrYDO/MzlRyFcjwQ==
@@ -7194,7 +7201,7 @@ react-native-text-input-mask@^1.0.1:
   resolved "https://registry.yarnpkg.com/react-native-text-input-mask/-/react-native-text-input-mask-1.0.1.tgz#93b4374c3c73bc78eac907094662d5d98166f359"
   integrity sha512-gN0N+3tpw1kgHsuaqzugN7hc5XsjlyXET4/Q3C36F6LxwpIdnf3k9yCL4vfAlw6QxwuBTtyFaRxGJgwZkzk4Ng==
 
-react-native-vector-icons@^6.5.0:
+react-native-vector-icons@^6.6.0:
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-6.6.0.tgz#66cf004918eb05d90778d64bd42077c1800d481b"
   integrity sha512-MImKVx8JEvVVBnaShMr7/yTX4Y062JZMupht1T+IEgbqBj4aQeQ1z2SH4VHWKNtWtppk4kz9gYyUiMWqx6tNSw==

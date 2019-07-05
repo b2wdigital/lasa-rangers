@@ -8,7 +8,7 @@ export const Container = styled.View`
 `;
 
 export const ButtonSearch = styled.TouchableOpacity`
-  height: 52;
+  height: 75;
   width: 60;
   background-color: orange;
   position: absolute;
@@ -21,8 +21,28 @@ export const InputSearch = styled.TextInput`
   height: 60;
   width: 100%;
   background-color: transparent;
-  position: absolute;
-  top: 70;
-  z-index: 1;
+
+  /* top: 70;
+  z-index: 1; */
   padding-left: 20px;
+`;
+
+export const SearchContainer = styled.View`
+width: 100%;
+height: 65;
+padding: 5px 15px;
+background-color: orange;
+top: 80;
+  z-index: 1;
+  position: absolute;
+  flex-direction: row;
+`;
+
+export const IconsContainer = styled.View`
+width: 18%;
+height: 100%;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
 `;
