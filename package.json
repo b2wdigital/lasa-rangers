@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "eslint-config-airbnb-base": "^13.2.0",
+    "husky": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-devtools": "^3.6.0",
